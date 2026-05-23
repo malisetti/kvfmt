@@ -1,0 +1,19 @@
+[package]
+name = "kvfmt"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+serde_json = { version = "1.0.128", default-features = false, features = ["std"] }
+
+[lib]
+path = "src/lib.rs"
+
+[[bin]]
+name = "j2k"
+path = "src/bin/j2k.rs"
+
+[[bin]]
+name = "k2j"
+path = "src/bin/k2j.rs"
